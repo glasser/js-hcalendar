@@ -1,0 +1,50 @@
+//td {
+//  border: solid 2px;
+//}
+
+//table {
+//  border: dashed 1px;
+//}
+
+.calHeader {
+  font-size:16px;
+  font-family:arial, helvetica; 
+  font-weight:bold;
+  text-align: center;
+}
+
+
+.calDay {
+  background-color:#EDECD8; 
+  height:80px; 
+  width: 90px;
+  vertical-align: top;
+}
+.calDayToday {
+  background-color:#F5F4ED; 
+}
+.calEmptyDay {
+  background-color:#EEEEEE; 
+}
+
+.calDayLabel { 
+  font-size:10px; 
+  font-family:verdana, arial, helvetica; 
+  color:#00F;
+  text-align: right;
+}
+
+.calEvent				{ font-size:10px; line-height:16px; font-family:verdana, arial, helvetica; color:#000 }
+
+td.calColumnHeader {
+  background-color:#72747A; 
+  font-size:12px; 
+  font-family:arial, helvetica; 
+  color:#FFFFFF; 
+  font-weight:bold;
+  text-align: center;
+}
+
+tr.calAbbrevColumnHeader {
+  display: none;
+}
