@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="en-us" />
+		
+		<title>calendar</title>
+		
+		<meta name="ROBOTS" content="ALL" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta name="MSSmartTagsPreventParsing" content="true" />
+		<meta name="Copyright" content="(c) 2005 Copyright content:  Copyright design: David Glasser" />
+		<!-- (c) Copyright 2005 by David Glasser All Rights Reserved. -->
+		
+		<meta name="Keywords" content="__KEYWORDS__" />
+		<meta name="Description" content="__DESCRIPTION__" />
+		
+		<link href="calendar.css" rel="stylesheet" type="text/css" title="big calendar" media="all" />
+		<link href="minicalendar.css" rel="alternate stylesheet" type="text/css" title="mini calendar" media="all" />
+		
+		<!-- import the DOM logic from external javascript files -->
+		<script type="text/javascript" src="hcalendar.js"></script>
+		<script type="text/javascript" src="styleswitcher.js"></script>
+
+ 					
+ 		<!-- KLUDGE:: Win IE 5 -->
+ 		<!-- corrects the unsightly Flash of Unstyled Content. See http://www.bluerobot.com/web/css/fouc.asp for more info -->
+ 		<script type="text/javascript"></script>
+ 		<!-- END KLUDGE:: -->
+        		
+	</head>
+	
+	<body id="">
+	   <p>View the calendar with a different style sheet:
+
+	    <a href="#" 
+	    onclick="setActiveStyleSheet('mini calendar'); 
+	    return false;">mini calendar</a>
+	    <a href="#" 
+	    onclick="setActiveStyleSheet('big calendar'); 
+	    return false;">big calendar</a>
+	    </p>
+
+	    <div class="vevent">
+		<span class="summary">Event for the first</span>:
+		<abbr class="dtstart" title="20050501">May 1, 2005</abbr>
+	    </div>
+	    <div class="vevent">
+		<span class="summary">Another event for the first <a href="something">with a link</a></span>:
+		<abbr class="dtstart" title="20050501">May 1, 2005</abbr>
+	    </div>
+	    <div class="vevent">
+		<span class="summary">Event for the fifth</span>:
+		<abbr class="dtstart">20050505</abbr>
+	    </div>
+	    <div class="vevent">
+		<span class="summary">Yet another event for the first</span>:
+		<abbr class="dtstart" title="20050501">May 1, 2005</abbr>
+	    </div>
+	    <div class="vevent">
+		<span class="summary">Super Juneday</span>:
+		<abbr class="dtstart" title="20050607">June 7, 2005</abbr>
+	    </div>
+	    <div class="vevent">
+		<span class="summary">Fun stuff next mar nine</span>:
+		<abbr class="dtstart" title="20060309">March 9, 2006</abbr>
+	    </div>
+
+	    <div id="jhCalendar" />
+	</body>
+</html>
